@@ -1,0 +1,401 @@
+:root {
+    --primaryLeft: rgb(4, 104, 129);
+    --primaryRight: rgb(7, 68, 83);
+    --primarylight: rgb(17, 32, 36);
+    --maintransition: all 0.3s linear;
+    --mainback:linear-gradient(#000,rgb(39, 147, 161),rgb(34, 159, 168),rgb(225, 255, 223));
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+.vlmheader{
+    display: none;
+}
+.wholesection{
+    display:block;
+}
+/* navbar */
+.navbar{
+    background: var(--primarylight);
+    position: sticky;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 9;
+    box-shadow: 0 0 20px 5px rgba(54, 58, 55, 0.849);
+}
+.vlmbar{
+    position: relative;
+    height: 800px;
+    width: 100%;
+    overflow: hidden;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background:url('../images/bg.jpg') ;
+    /* background:chocolate; */
+}
+.vlmbar::before{
+    content: '';
+    position: absolute;
+    bottom:0;
+    height: 150px;
+    width: 100%;
+    z-index: 1000;
+    background: linear-gradient(transparent, #fff) ;
+}
+.vlmbar #vlayer1{
+    position: absolute;
+    top:-1em;
+    left: 20%;
+    width: 100%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.vlmbar .vlayers2{
+    position: absolute;
+    right: 0;
+    left: 20px;
+    top: 8em;
+    width: 100%;
+    z-index: 9;
+}
+.vlmbar #text{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    transform:translateY(50%);
+}
+.vlmbar2{
+    padding: 200px;
+    box-sizing: border-box;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.vlmbar2 h2{
+    margin: 0;
+    padding: 0;
+    font-size: 4em;
+}
+.vlmbar2 p{
+    font-size:1.2em;
+}
+.navbar-center{
+    position: relative;
+    justify-content: space-around;
+    width: 100%;
+}
+.logo::first-letter{
+    color:coral;
+    font-size:xx-large;
+    font-weight:bolder;
+    font-family:'Times New Roman', Times, serif;
+}
+.logo{
+    color:rgb(179, 227, 255);
+    font-size:21px;
+    text-align:center;
+    justify-content:space-between;
+    align-content: center;
+    top: 1.2em;
+    position: relative;
+}
+.floatA{
+    float:left;
+    position: relative;
+    cursor: pointer;
+    display: block;
+}
+.floatA img{
+    float:left;
+    position: relative;
+    top:2em;
+    left:1em;
+    height: 42px;
+    width: 45px;
+    cursor: pointer;
+}
+.floatB{
+    float:right;
+    position: relative;
+}
+.floatB img{
+    position: relative;
+    height: 55px;
+    width:60px;
+    top:-3em;
+    font-size:5px;
+    left:-.7em;
+    cursor:pointer;
+}
+.floatB img:hover{
+    position: relative;
+    height: 55px;
+    width:60px;
+    top:-3.5em;
+    font-size:5px;
+    left:-.6em;
+    box-shadow: 0 0 20px 2px rgb(0, 0, 0);
+    border-radius: 5px;
+    transition: var(--maintransition);
+}
+/* end of navbar */
+/* star vlmappA */
+.vlmappA{
+    position:absolute;
+    min-height:100vh;
+    padding: 100px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    overflow: hidden;
+    width:100%;
+}
+.vlmappA header{
+    z-index:1;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.vlmappA header .logo{
+    top: .2em;
+    left:-1.5em;
+    position:relative;
+    font-size: 20px;
+    color:white;
+    text-decoration: none;
+    font-size:2em;
+}
+.vlmappA .navigation{
+    position: relative;
+    display: flex;
+}
+.vlmappA .navigation li{
+    list-style-type: none;
+}
+.vlmappA .navigation li a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-weight: 400;
+    margin-left: 7px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.vlmappA header .navigation li a.active,
+.vlmappA header .navigation li a:hover{
+    background:white;
+    color:darkslategray;
+}
+.content{
+    position: relative;
+    top: -.3em;
+    z-index: 1;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.content h2{
+    font-size:65px;
+    font-weight:700;
+    line-height: 1.2em;
+    font-family: monospace,sans-serif;
+    color:white;
+}
+.content .textbox p{
+    color:rgb(0, 8, 77);
+    font-size:1.2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.content .textbox{
+    position: relative;
+    top: -3em;
+}
+.content .imgbox{
+    position: relative;
+    z-index: 1;
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content .imgbox img{
+    max-width: 400px;
+}
+.content .textbox  a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    color: azure;
+    text-decoration: none;
+    font-family: arial;
+    box-shadow: 0 0 20px -5px #000;
+    background: linear-gradient(30deg, #036c74,#23d5cc);
+}
+#vlmthumb{
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    display:flex;
+    z-index: 1;
+}
+#vlmthumb li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: var(--transition);
+    height: 60px;
+    padding: 10px;
+    background:rgba(255,255,255,0.1);
+    border: 2px solid rgba(255,255,255,0.25);
+}
+#vlmthumb li img{
+    max-width:50px;
+}
+#vlmthumb li.active{
+    border: 2px solid rgba(255, 255, 255, 0.226);
+}
+#vlmthumb li::before{
+    position: absolute;
+    top: -200px;
+    left: -100px;
+    white-space: nowrap;
+    font-size: 8em;
+    color: rgba(0,0,0,0.3);
+    opacity: 0;
+    font-weight: 700;
+    pointer-events: none;
+    content:attr(data-text);
+}
+#vlmthumb li.active::before{
+    opacity:1;
+}
+.vlmbg{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: var(--mainback);
+    z-index: 1;
+}
+.vlmappB{
+    position:relative;
+    height:100vh;
+    width:100%;
+    background:rgb(83, 80, 255);
+}
+.vlmappC{
+    position:relative;
+    height:100vh;
+    width:100%;
+    background:rgb(168, 223, 195);
+}
+/* end of vlmappA */
+
+/* section a endend */
+
+/* start of vlmbook */
+.vlmapp{
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background: rgb(19, 6, 66);
+    position: relative;
+    display: none;
+}
+.app1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 500px;
+    box-shadow: inset 0 0 20px -2px #0bbfec;
+    border-radius: 10px;
+}
+.app{
+    position: relative;
+    top: -1em;
+    border-top: 10px solid rgb(115, 246, 255) ;
+    height: 98px;
+    width: 400px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+}
+.app button{
+    position: relative;
+    top: 2em;
+    padding: 7px 23px;
+}
+#right{
+    position: relative;
+    left: 16em;
+}
+#left{
+    position: relative;
+    left: 1em;
+}
+/* end of vlmbook */
+
+/* make responsive */
+@media (max-width: 790px){
+    .header .navigation{
+        display:none;
+    }
+    .vlmappA{
+        padding:20px;
+        padding-bottom: 120px;
+    }
+    .vlmappA header .logo{
+        top: -10px;
+        left: -2em;
+    }
+    .content{
+        flex-direction: column;
+        margin-top: 80px;
+    }
+    .content .textbox {
+        max-width: 100%;
+        position:absolute;
+        z-index: 4;
+    }
+    .content .textbox h2{
+        font-size: 2.5em;
+        margin-bottom:15px;
+        text-align: center;
+    }
+    .content .imgbox{
+        top: 5em;
+        max-width: 100%;
+        justify-content:center;
+    }
+    #vlmthumb{
+        display: flex;
+        align-content: space-around;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #vlmthumb li{
+        box-shadow: inset 0 0 20px 5px #000;
+    }
+
+}
+
+/* end of responsive */
+
+

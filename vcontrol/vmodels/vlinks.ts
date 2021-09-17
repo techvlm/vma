@@ -4,7 +4,7 @@ export type {RouterContext, RouteParams,Context} from "https://deno.land/x/oak@v
 export {renderFileToString} from "https://deno.land/x/dejs@0.10.1/mod.ts";
 export * as bcrypt from "https://deno.land/x/bcrypt@v0.2.4/mod.ts";
 export {decode} from "https://deno.land/x/djwt@v2.3/mod.ts";
-export {} from "https://deno.land/x/dot_env@0.2.0/mod.ts";
+export {config} from "https://deno.land/x/dotenv@v3.0.0/mod.ts"
 export type {WebSocket} from "https://deno.land/std@0.102.0/ws/mod.ts";
 // import {} from "https://deno.land/std@0.102.0/hash/_wasm/hash.ts"
 // import {} from "https://deno.land/std@0.102.0/async/pool.ts"

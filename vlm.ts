@@ -1,6 +1,7 @@
 // deno-lint-ignore-file
 import {Application,Router,send,magenta,green,dim ,bold,cyan} from './vcontrol/vmodels/vlinks.ts';
 import {paramsapi} from "./vcontrol/vmodels/api.ts";
+// import {config} from "./vcontrol/vmodels/vlinks.ts";
 import { vmasignup, vmalogin } from './vcontrol/vlmrouter.ts';
 import {
 	vmaApp,
@@ -67,9 +68,9 @@ vlm.addEventListener('error', async(error)=>{
 // http://172.24.112.1:9060/ this ip ???
 
 
-const vlmport:number = 9000;
+const vlmport:number = 9080;
 const vlmhost:string = '192.168.8.100';
 export const vlmagr:any = vlmport ?? vlmhost;
 vlm.listen({port: vlmagr || vlmhost || vlmport});
 // console.log(bgBlue(red(bold("Hello world!"))));
-console.log(cyan(bold(`vlm server is listening on port`)),magenta(`=>:)`),green(dim(` http://${vlmhost}:${vlmport}`)))
+console.log(cyan(bold(`vlm server is listening on port 🙁`)),magenta(`=>:)`),green(dim(` http://${vlmhost}:${vlmport}`)))

@@ -5,5 +5,6 @@
     "deno.suggest.imports.hosts": {
         "https://deno.land": false
     },
-    "kvlang.pythonPath": "curee"
+    "kvlang.pythonPath": "curee",
+    "workbench.colorTheme": "InterSystems Default Dark"
 }

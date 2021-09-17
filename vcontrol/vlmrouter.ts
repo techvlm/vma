@@ -24,8 +24,6 @@ export const vmasignup:any = async (ctx:RouterContext) =>{
         const data = day+'/'+month+'/'+year+' TIME'+'=>: '+hour+':'+minute;
         let vdata:any = await vlmform(username,username1,email,phonenumber, vlmhash);
 
-        ctx.response.redirect('/');
-
         if(vdata == true){
           ctx.response.redirect('/');
         }
